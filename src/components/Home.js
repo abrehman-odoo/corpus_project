@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { ColorRing } from 'react-loader-spinner';
 
 import swal from 'sweetalert'
+import Copyright from "./Copyright";
 export default function Home() {
     const [data, setdata] = useState([])
     const [Word, setWord] = useState('');
@@ -2911,12 +2912,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <footer style={{ textAlign: 'center' }}>
-                <span style={{ color: "#b03e41" }}>
-                    Last Updated: 8 October, 2022.{"    "}PakLocCorp. Copyrights &copy; pakloccorp.com
-
-                </span>
-            </footer>
+            <Copyright />
         </div>
     );
 }
